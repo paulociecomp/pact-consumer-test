@@ -1,0 +1,46 @@
+{
+  "consumer": {
+    "name": "WesterosConsumer"
+  },
+  "provider": {
+    "name": "WesterosProvider"
+  },
+  "interactions": [
+    {
+      "description": "a request for places",
+      "providerState": "list of places",
+      "request": {
+        "method": "GET",
+        "path": "/westeros"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": [
+          {
+            "place": "Ponta Tempestade",
+            "house": "Baratheon"
+          },
+          {
+            "place": "Rochedo Casterly",
+            "house": "Lannister"
+          },
+          {
+            "place": "Atalaia da água cinzenta",
+            "house": "Reed"
+          },
+          {
+            "place": "Pedra do Dragão",
+            "house": "Baratheon"
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
